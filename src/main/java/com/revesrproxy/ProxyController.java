@@ -37,7 +37,7 @@ public class ProxyController {
         String query = exchange.getRequest().getURI().getQuery();
         //String url = targetUrl + path + (query != null ? "?" + query : "");
 
-        String url ="http://apgc-leumi-dev.hq.il.tleumi:9001/v1/kyc-to-chatgpt/deployments/gpt4o/chat/completions?api-version=2024-10-21";
+        String url ="http:/xxxxxxxxxxxxxxxxxxxxxxxxxxx";
         logger.info("Proxying request to URL: {}", url);
         logger.info("Request method: {}", exchange.getRequest().getMethod());
         logger.info("Request headers: {}", exchange.getRequest().getHeaders());
@@ -80,7 +80,7 @@ public class ProxyController {
                             .uri(url)
                             .headers(headers -> {
                                 headers.addAll(requestHeaders);
-                                headers.add("X-APG-APIKey", "M5GJGr3C9TkH2evvqBX7GufuA3Ywx1XC"); // הוסף את הכותרת שלך כאן
+                                headers.add("X-APG-APIKey", "xxxxxxxxxxxxxxxxxxxxxxxxx"); // הוסף את הכותרת שלך כאן
                             });
 
                     return requestBodySpec
