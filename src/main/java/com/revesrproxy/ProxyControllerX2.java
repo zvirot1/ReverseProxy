@@ -114,7 +114,7 @@ public class ProxyControllerX2 {
             String path) {
 
         //String url = targetUrl + path + (queryParams.isEmpty() ? "" : "?" + queryParams.toSingleValueMap().toString().replace("{", "").replace("}", "").replace(", ", "&"));
-        String url ="http://apgc-leumi-dev.hq.il.tleumi:9001/v1/kyc-to-chatgpt/deployments/gpt4o/chat/completions?api-version=2024-02-01";
+        String url ="http://agdgfdfgdfd01/v1/kyc-to-chatgpt/deployments/gpt4o/chat/completions?api-version=2024-02-01";
 
 
         return body.defaultIfEmpty(new byte[0])
@@ -122,7 +122,7 @@ public class ProxyControllerX2 {
                         .uri(url)
                         .headers(httpHeaders -> {
                             headers.forEach(httpHeaders::add);
-                            httpHeaders.add("X-APG-APIKey", "M5GJGr3C9TkH2evvqBX7GufuA3Ywx1XC"); // Add your custom header here
+                            httpHeaders.add("X-APG-APIKey", "gfdgdfgdfgd"); // Add your custom header here
 
                             httpHeaders.remove("Accept");
                             httpHeaders.remove("Authorization");
